@@ -1,70 +1,132 @@
-# Getting Started with Create React App
+# Dilmi Dental Clinic Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive website for Dilmi Dental Clinic built with React. The website features a clean design, multilingual support (English and Arabic), and SEO optimization.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- 🌐 Multilingual Support (English & Arabic with RTL layout)
+- 📱 Fully Responsive Design
+- 🎨 Modern UI with Neomorphic Elements
+- 🔍 SEO Optimized
+- ⚡ Fast Loading Performance
+- 🧩 Component-Based Architecture
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- i18next for Internationalization
+- Framer Motion for Animations
+- React Helmet for SEO
+- React Router for Navigation
+- CSS3 for Styling
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v14 or higher)
+- npm (v6 or higher)
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/dilmi-dental.git
+   cd dilmi-dental
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install dependencies:
+   ```
+   npm install --legacy-peer-deps
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Start the development server:
+   ```
+   npm start
+   ```
 
-### `npm run eject`
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Deployment
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The website is configured to be deployed on GitHub Pages with a custom domain (www.dilmidental.com).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Manual Deployment
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Build the project:
+   ```
+   npm run build
+   ```
 
-## Learn More
+2. Deploy to GitHub Pages:
+   ```
+   npm run deploy
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Using the Deployment Script
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+For convenience, a deployment script is included:
 
-### Code Splitting
+```
+./deploy.sh
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This script will:
+- Check for uncommitted changes
+- Install dependencies if needed
+- Build the project
+- Ensure the CNAME file is present
+- Deploy to GitHub Pages
 
-### Analyzing the Bundle Size
+## DNS Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To set up the custom domain with GitHub Pages:
 
-### Making a Progressive Web App
+1. Configure your domain provider with the following records:
+   - A record pointing to GitHub Pages IPs:
+     - 185.199.108.153
+     - 185.199.109.153
+     - 185.199.110.153
+     - 185.199.111.153
+   - CNAME record: www pointing to `yourusername.github.io`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. In your GitHub repository settings, under "Pages", add your custom domain.
 
-### Advanced Configuration
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+dilmi-dental/
+├── public/
+│   ├── index.html
+│   ├── 404.html
+│   ├── CNAME
+│   ├── robots.txt
+│   ├── sitemap.xml
+│   └── locales/
+│       ├── en/
+│       └── ar/
+├── src/
+│   ├── components/
+│   ├── styles/
+│   ├── assets/
+│   ├── i18n/
+│   ├── App.js
+│   └── index.js
+└── package.json
+```
 
-### Deployment
+## Maintenance
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+To update the website content:
 
-### `npm run build` fails to minify
+1. Edit the appropriate files in the `src` directory
+2. For text changes, update the translation files in `public/locales`
+3. Deploy using the provided deployment script
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+
+For any inquiries or support, please contact [your-email@example.com](mailto:your-email@example.com).

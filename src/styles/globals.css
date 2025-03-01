@@ -1,0 +1,147 @@
+/* Global Styles */
+:root {
+  --primary-blue: #24BCDC;
+  --primary-teal: #24DCB0;
+  --black: #333;
+  --white: #fff;
+  --light-gray: #f8f8f8;
+  --gray: #eaeaea;
+  --shadow-light: rgba(200, 200, 200, 0.2);
+  --shadow-medium: rgba(150, 150, 150, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-blue);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+section {
+  padding: 5rem 2rem;
+}
+
+/* Neo Style Elements */
+.neo-card {
+  border-radius: 15px;
+  background: var(--white);
+  box-shadow: 
+    8px 8px 16px var(--shadow-light),
+    -8px -8px 16px var(--white);
+  transition: all 0.3s ease;
+}
+
+.neo-card:hover {
+  box-shadow: 
+    5px 5px 10px var(--shadow-light),
+    -5px -5px 10px var(--white);
+}
+
+.neo-button {
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: 
+    5px 5px 10px var(--shadow-light),
+    -5px -5px 10px var(--white);
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+}
+
+.neo-button:hover {
+  box-shadow: 
+    inset 4px 4px 8px var(--shadow-light),
+    inset -4px -4px 8px var(--white);
+}
+
+.neo-input {
+  border: none;
+  background: var(--light-gray);
+  box-shadow: 
+    inset 4px 4px 6px var(--shadow-light),
+    inset -4px -4px 6px var(--white);
+  border-radius: 10px;
+  padding: 12px 15px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Section headers */
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+}
+
+section h2::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background: linear-gradient(45deg, var(--primary-blue), var(--primary-teal));
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  section h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  section h2 {
+    font-size: 1.8rem;
+  }
+} 

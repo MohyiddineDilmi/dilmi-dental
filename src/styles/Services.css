@@ -1,0 +1,79 @@
+/* Services Section Styles */
+.services-section {
+  background-color: var(--white);
+  text-align: center;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border-radius: 30px;
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border: none;
+  /* Neo-style with gradient border */
+  background: var(--white);
+  box-shadow: 
+    6px 6px 12px rgba(163, 177, 198, 0.2),
+    -6px -6px 12px rgba(255, 255, 255, 0.7);
+}
+
+/* Gradient border effect on hover */
+.service-card:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 30px;
+  padding: 2px; /* Border thickness */
+  background: linear-gradient(45deg, #24BCDC, #24DCB0);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-blue);
+}
+
+.service-icon i {
+  background: linear-gradient(45deg, var(--primary-blue), var(--primary-teal));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.service-card h3 {
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+/* Remove service-btn styles since button is removed */
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+} 

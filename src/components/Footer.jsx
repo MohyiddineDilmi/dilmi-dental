@@ -80,7 +80,7 @@ const Footer = () => {
           </div>
           <p>{t('footer.tagline')}</p>
           <div className="social-links">
-            <a href="#" className="social-icon" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com/p/Dilmi-Dental-61556071674319/" className="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
             <a href="#" className="social-icon" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
             <a href="#" className="social-icon" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
           </div>

@@ -108,7 +108,7 @@ const Footer = () => {
           <h3>{t('footer.contactInfo')}</h3>
           <ul className="contact-info">
             <li><i className="fas fa-map-marker-alt"></i> {t('footer.address')}</li>
-            <li><i className="fas fa-phone-alt"></i> <span dir="ltr" className="phone-number">+(213) 6 68 64 41 23</span></li>
+            <li><i className="fas fa-phone-alt"></i> <span dir="ltr" className="phone-number">+213 668 99 51 05</span></li>
             <li><i className="fas fa-envelope"></i> <span dir="ltr">info@dilmidental.com</span></li>
           </ul>
         </div>

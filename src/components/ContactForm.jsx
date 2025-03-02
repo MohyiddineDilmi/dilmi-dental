@@ -31,7 +31,7 @@ const ContactForm = () => {
               <i className="fas fa-phone-alt" aria-hidden="true"></i>
               <div className="detail-content">
                 <strong>{t('contact.phone')}</strong>
-                <p dir="ltr" className="phone-number">+(213) 6 68 64 41 23</p>
+                <p dir="ltr" className="phone-number">+213 668 99 51 05</p>
               </div>
             </div>
             

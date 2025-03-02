@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.7dfabd95.css",
-    "main.js": "/static/js/main.0a158d63.js",
+    "main.js": "/static/js/main.5059370c.js",
     "static/js/453.d7b56508.chunk.js": "/static/js/453.d7b56508.chunk.js",
     "static/media/dilmi_dental.svg": "/static/media/dilmi_dental.0053315eb070871c65d9c9d3e4aa7160.svg",
     "static/media/dilmi_dental_white.svg": "/static/media/dilmi_dental_white.8153ead7fda5412cc39ee5a759330577.svg",
     "index.html": "/index.html",
     "main.7dfabd95.css.map": "/static/css/main.7dfabd95.css.map",
-    "main.0a158d63.js.map": "/static/js/main.0a158d63.js.map",
+    "main.5059370c.js.map": "/static/js/main.5059370c.js.map",
     "453.d7b56508.chunk.js.map": "/static/js/453.d7b56508.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7dfabd95.css",
-    "static/js/main.0a158d63.js"
+    "static/js/main.5059370c.js"
   ]
 }
